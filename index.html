@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class=" text-white">
+    <div class="crud container">
+        <div class="head text-center mt-4 pt-4">
+            <h2 class="h1 fw-bolder">x-store</h2>
+            <p class="fw-bold">A store that sells electrical appliances.</p>
+        </div>
+        <div class="enbut">
+            <div class="row">
+                <div class="col-lg-12">
+                    <input class="form-control" type="text" placeholder="title" id="title">
+                </div>
+            </div>
+            <div class="row mb-4 mt-4 ">
+                <div class="col-lg-3">
+                    <input onkeyup="GetTotal()" class="form-control" type="number" placeholder="price" id="price">
+                </div>
+                <div class="col-lg-3">
+                    <input onkeyup="GetTotal()" class="form-control" type="number" placeholder="taxes" id="taxes">
+                </div>
+                <div class="col-lg-3">
+                    <input onkeyup="GetTotal()" class="form-control" type="number" placeholder="ads" id="ads">
+                </div>
+                <div class="col-lg-3">
+                    <div style="background-color: #a00d02;" class="tot" id="total">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <input class="form-control mb-4" type="text" id="namee" placeholder="Name">
+                    <input class="form-control mb-4" type="text" id="category" placeholder="category">
+                </div>
+                <div class="col-lg-12">
+                    <button id="submet" onclick="creatprodact()" class="btn btn-secondary w-100">creat</button>
+                    <button id="ubdate" onclick="ubdatebrodact()" class="btn btn-secondary w-100 d-none">ubdate</button>
+                </div>
+            </div>
+        </div>
+        <div class="output">
+            <div class="row">
+                <div class="col-lg-12">
+                    <input id="searsh" oninput="searshproduct()" type="search" placeholder="search by name..... " id="serch" class="form-control mt-4">
+                </div>
+            </div>
+        </div>
+        <table class="text-center w-100 fw-bolder mt-5">
+            <thead>
+                <tr>
+                    <td class="pb-3 pt-3">ID</td>
+                    <td class="pb-3 pt-3">TITLE</td>
+                    <td class="pb-3 pt-3">PRICE</td>
+                    <td class="pb-3 pt-3"">TAXES</td>
+                    <td class="pb-3 pt-3">ADS</td>
+                    <td class="pb-3 pt-3">TOTAL</td>
+                    <td class="pb-3 pt-3">NAME</td>
+                    <td class="pb-3 pt-3">CATEGORY</td>
+                    <td class="pb-3 pt-3">UBDATE</td>
+                    <td class="pb-3 pt-3">DELETE</td>
+                </tr>
+            </thead>
+            <tbody id="creatnew">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

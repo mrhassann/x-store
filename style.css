@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(IMG/240_F_408199191_OsO7cMVY8c3h18uRozn2zPx0GUTqsWB6.jpg);
+}
+input {
+    background-color: #c0c0c0 !important;
+}
+.enbut button {
+    transition: .5s !important;
+}
+.enbut button:hover {
+    letter-spacing: 1px;
+}
+.output button {
+    transition: .5s !important;
+}
+.output button:hover {
+    letter-spacing: 1px;
+}
+.tot {
+    background-color: #c0c0c0;
+    padding: 5px 4px;
+    color: antiquewhite;
+}
+.tot::before {
+    content: 'TOTAL :';
+}
