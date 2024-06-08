@@ -52,7 +52,7 @@ function clearinput(){
     taxes.value=null;
     ads.value=null;
     total.innerHTML=null;
-    namee:namee.value=null,
+    namee.value=null,
     category.value=null;
 }
 // =============read data=============
@@ -140,4 +140,17 @@ function ubdatebrodact()
     displaydata();
     submet.classList.remove('d-none');
     ubdate.classList.add('d-none');
+}
+
+function validtion()
+{
+    var text= title.value;
+    var regex=/^[A-Z][a-z]{3,10}$/
+    if(regex.test=(text) == true){
+        title.classList.add('is-valid')
+        title.classList.remove('is-invalid')
+    }else{
+        title.classList.add('is-invalid')
+        title.classList.remove('is-valid')
+    }
 }
