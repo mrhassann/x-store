@@ -142,15 +142,32 @@ function ubdatebrodact()
     ubdate.classList.add('d-none');
 }
 
-function validtion()
+function validcategory()
 {
-    var text= title.value;
+    var text=category.value;
     var regex=/^[A-Z][a-z]{3,10}$/
-    if(regex.test=(text) == true){
-        title.classList.add('is-valid')
-        title.classList.remove('is-invalid')
+    var msgname=document.getElementById('msgname')
+    if(regex.test(text)==true){
+        category.classList.add('is-valid')
+        category.classList.remove('is-invalid')
+        msgcategory.classList.add('d-none');
     }else{
-        title.classList.add('is-invalid')
-        title.classList.remove('is-valid')
+        category.classList.add('is-invalid')
+        category.classList.remove('is-valid')
+        msgcategory.classList.remove('d-none');
+    }
+}
+function validname()
+{
+    var text=namee.value;
+    var regexx=/^([A-Z]|[a-z]){4,10}$/
+    if(regexx.test(text)==true){
+        namee.classList.add('is-valid');
+        namee.classList.remove('is-invalid');
+        msgname.classList.add('d-none');
+    }else{
+        namee.classList.add('is-invalid');
+        namee.classList.remove('is-valid');
+        msgname.classList.remove('d-none');
     }
 }
