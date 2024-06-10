@@ -11,6 +11,10 @@ let searsh= document.getElementById('searsh');
 let name= document.getElementById('namee');
 var mood='creat';
 var index=0;
+let color = document.getElementById('headmark');
+color.style.color='red'
+let colorr = document.getElementById('undermark');
+colorr.style.color = 'red'
 // =========get total=============
 function GetTotal()
 {
@@ -141,7 +145,6 @@ function ubdatebrodact()
     submet.classList.remove('d-none');
     ubdate.classList.add('d-none');
 }
-
 function validcategory()
 {
     var text=category.value;
